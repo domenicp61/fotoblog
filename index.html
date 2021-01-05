@@ -1,5 +1,5 @@
 ---
-# missing front matter
+# add the missing front matter
 ---
 <!DOCTYPE html>
 <html>
@@ -9,7 +9,8 @@
   <meta name="description" content="{{ site.description }}" />
   <link rel="stylesheet" href="assets/css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <!-- FIXME what is this required for ??link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
+  <!-- FIXME what is this required for ??
+       link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"-->
   <style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   </style>
@@ -21,14 +22,19 @@
         <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
           <i class="fa fa-remove"></i>
         </a>
-        <img src="../w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+        <img style="width:45%;" class="w3-round"
+             src="../w3images/avatar_g2.jpg" alt="FIXME alt image tag required">
+        <br />
         <h4><b>PORTFOLIO</b></h4>
-        <p class="w3-text-grey">Template by W3.CSS</p>
       </div>
       <div class="w3-bar-block">
-        <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+        <a href="#albums" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
           <i class="fa fa-th-large fa-fw w3-margin-right"></i>
-          PORTFOLIO
+          ALBUMS
+        </a>
+        <a href="#travelBlogs" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+          <i class="fa fa-th-large fa-fw w3-margin-right"></i>
+          TRAVEL BLOGS
         </a>
         <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
           <i class="fa fa-user fa-fw w3-margin-right"></i>
@@ -63,9 +69,10 @@
       <!-- Header -->
       <header id="portfolio">
         <a href="#">
-          <img src="../w3images/avatar_g2.jpg"
-               style="width:65px;"
-               class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+          <img style="width:65px;"
+               class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"
+               src="../w3images/avatar_g2.jpg"
+               alt="FIXME alt avatar image required">
         </a>
         <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()">
           <i class="fa fa-bars"></i>
@@ -74,38 +81,46 @@
         <div class="w3-container">
           <h1><b>Our Travels</b></h1>
           <div class="w3-section w3-bottombar w3-padding-16">
-            <span class="w3-margin-right">Filter:</span>
             <button class="w3-button w3-white">
               <i class="fa fa-diamond w3-margin-right">Photos</i>
             </button>
             <button class="w3-button w3-white w3-hide-small">
-              <i class="fa fa-photo w3-margin-right">Travel Blogss</i>
+              <i class="fa fa-photo w3-margin-right">Travel Blogs</i>
             </button>
           </div>
         </div>
       </header>
 
+      <div class="w3-row-padding">
+        <h4 id="albums"><b>Recent Travel Albums</b></h4>
+
+        <hr class="w3-opacity">
+      </div>
       <!-- First Photo Grid-->
       <div class="w3-row-padding">
         <div class="w3-third w3-container w3-margin-bottom">
           <img src="../w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom">
           <img src="../w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
         <div class="w3-third w3-container">
           <img src="../w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
       </div>
@@ -116,21 +131,24 @@
           <img src="../w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
         <div class="w3-third w3-container w3-margin-bottom">
           <img src="../w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
         <div class="w3-third w3-container">
           <img src="../w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
           <div class="w3-container w3-white">
             <p><b>Lorem Ipsum</b></p>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
           </div>
         </div>
       </div>
@@ -139,7 +157,7 @@
       <div class="w3-center w3-padding-32">
         <div class="w3-bar">
           <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
-          <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">1</a>
           <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
           <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
           <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
@@ -147,8 +165,16 @@
         </div>
       </div>
 
-      <!-- Images of Me -->
-      <div class="w3-row-padding w3-padding-16" id="about">
+      <!-- Recent blog posts -->
+      <div class="w3-row-padding">
+        <h4 id="travelBlogs"><b>Recent Travel Blogs</b></h4>
+
+         <hr class="w3-opacity">
+      </div>
+
+      <!-- About Us -->
+      <div class="w3-row-padding w3-padding-16">
+        <h4 id="about"><b>About Us</b></h4>
         <div class="w3-col m6">
           <img src="../w3images/avatar_g.jpg" alt="FIXME missing image of Me" style="width:100%">
         </div>
@@ -158,7 +184,6 @@
       </div>
 
       <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-        <h4><b>About Us</b></h4>
         <p>
           Just me, myself and I, exploring the universe of unknownment.
           I have a heart of love and an interest of lorem ipsum and mauris neque quam blog.
@@ -176,12 +201,10 @@
         <h4 id="contact"><b>Contact Us</b></h4>
         <div class="w3-row-padding w3-center w3-padding-24" style="margin:0 -16px">
           <div class="w3-half w3-dark-grey">
-            <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i></p>
-            <p>{{ site.email }}</p>
+            <p><i class="fa fa-envelope w3-xxlarge w3-text-light-grey"></i>{{ site.email }}</p>
           </div>
           <div class="w3-half w3-teal">
-            <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i></p>
-            <p>+61 420 903 342</p>
+            <p><i class="fa fa-map-marker w3-xxlarge w3-text-light-grey"></i>{{ site.cellNumber }}</p>
           </div>
         </div>
         <hr class="w3-opacity">
@@ -190,62 +213,52 @@
       <!-- Footer -->
       <footer class="w3-container w3-padding-32 w3-dark-grey">
         <div class="w3-row-padding">
-          <div class="w3-third">
+          <div class="w3-half">
             <h3>FOOTER</h3>
-            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-            <p>Powered by <a href="default.html" target="_blank">w3.css</a></p>
+            <p>
+              Praesent tincidunt sed tellus ut rutrum.
+              Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+            </p>
           </div>
 
-          <div class="w3-third">
-            <h3>BLOG POSTS</h3>
-            <ul class="w3-ul w3-hoverable">
-              <li class="w3-padding-16">
-                <img src="../w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">Lorem</span><br>
-                <span>Sed mattis nunc</span>
-              </li>
-              <li class="w3-padding-16">
-                <img src="../w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
-                <span class="w3-large">Ipsum</span><br>
-                <span>Praes tinci sed</span>
-              </li>
-            </ul>
-          </div>
-
-          <div class="w3-third">
+          <div class="w3-half">
             <h3>POPULAR TAGS</h3>
             <p>
-              <span class="w3-tag w3-black w3-small w3-margin-bottom">Travel</span>
+              <span class="w3-tag w3-black w3-margin-bottom">Travel</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">New York</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">London</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">IKEA</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">NORWAY</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">DIY</span>
-              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Ideas</span>
+            </p>
+            <p>
+              <span class="w3-tag w3-black w3-margin-bottom">Ideas</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">Baby</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">Family</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">News</span>
+            </p>
+            <p>
+              <span class="w3-tag w3-black w3-margin-bottom">Shopping</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">Clothing</span>
-              <span class="w3-tag w3-grey w3-small w3-margin-bottom">Shopping</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">Sports</span>
               <span class="w3-tag w3-grey w3-small w3-margin-bottom">Games</span>
             </p>
           </div>
 
+          <div class="w3-black w3-center w3-padding-24">
+            <p>
+              Powered by:
+              <a href="default.html"
+                 title="W3.CSS"
+                 target="_blank"
+                 class="w3-hover-opacity">
+                w3.css
+              </a>
+            </p>
+          </div>
+
         </div>
       </footer>
-
-      <div class="w3-black w3-center w3-padding-24">
-        <p>
-          Powered by:
-          <a href="default.html"
-             title="W3.CSS"
-             target="_blank"
-             class="w3-hover-opacity">
-            w3.css
-          </a>
-        </p>
-      </div>
 
       <!-- End page content -->
     </div>
