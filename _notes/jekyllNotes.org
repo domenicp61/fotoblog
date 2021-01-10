@@ -194,3 +194,39 @@ Front matter of post
 blog_category: blog2
 ---
 #+end_example
+
+** Installing HTML5 Boilerplate
+
+ sudo npm install generator-h5bp -g
+domenicp@titan:~/projects/a$ yo h5bp
+? Would you like docs included? Yes
+   create doc/css.md
+   create doc/extend.md
+   create doc/faq.md
+   create doc/html.md
+   create doc/js.md
+   create doc/misc.md
+   create doc/TOC.md
+   create doc/usage.md
+   create css/main.css
+   create css/normalize.css
+   create img/.npmignore
+   create js/main.js
+   create js/plugins.js
+   create js/vendor/jquery-1.12.0.min.js
+   create js/vendor/modernizr-2.8.3.min.js
+   create .editorconfig
+   create .gitattributes
+   create .htaccess
+   create .npmignore
+   create 404.html
+   create apple-touch-icon.png
+   create browserconfig.xml
+   create crossdomain.xml
+   create favicon.ico
+   create humans.txt
+   create index.html
+   create LICENSE.txt
+   create robots.txt
+   create tile-wide.png
+   create tile.png
