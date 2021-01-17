@@ -1,6 +1,5 @@
 ---
 # add missing front matter
-page.sidebarWidth: "10%"
 ---
 
 <!DOCTYPE html>
@@ -17,7 +16,7 @@ page.sidebarWidth: "10%"
 
     <link rel="stylesheet" href="assets/css/normalize.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link rel="stylesheet" href="assets/css/4/w3.css" />
 
     <link
       rel="stylesheet"
@@ -27,6 +26,7 @@ page.sidebarWidth: "10%"
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+
     <style>
       body,
       h1,
@@ -38,15 +38,14 @@ page.sidebarWidth: "10%"
         font-family: "Raleway", sans-serif;
       }
     </style>
-
-    <link rel="stylesheet" href="assets/css/4/w3.css" />
   </head>
 
   <body>
     <!-- Page Container -->
     <div class="w3-container" id="PageContainerId">
       <!--[if lt IE 8] -->
-      <!-- p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p -->
+      <!-- p class="browserupgrade">You are using an <strong>outdated</strong> browser. 
+        Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p -->
       <!-- [endif]-->
 
       <!-- Sidebar/menu -->
@@ -57,7 +56,7 @@ page.sidebarWidth: "10%"
       >
         <button
           class="w3-bar-item w3-button w3-large"
-          onclick="w3_close()"
+          onclick="close_navSideBar()"
         >
           Close &times;
         </button>
@@ -68,7 +67,7 @@ page.sidebarWidth: "10%"
 
         <div class="w3-bottom" id="acknowledgementId">
           <p>Powered by:</p>
-          <ul style="list-style-type: none; margin: 0">
+          <ul style="list-style-type: none; margin: 0; padding: 2em">
             <li>
               <a
                 href="default.html"
@@ -105,18 +104,18 @@ page.sidebarWidth: "10%"
       <!-- End Sidebar/menu-->
 
       <div class="w3-container" id="MainContentId">
-
         <!-- Header -->
         <div class="w3-container" id="headerId">
-          <header class="w3-teal" style="width: 100%">
+          <header class="w3-teal">
             <button
               class="w3-button w3-xlarge"
-              onclick="w3_open()"
+              onclick="open_navSideBar()"
               id="openNavId"
             >
               &#9776;
+              <!-- the hamburger symbol-->
             </button>
-            <h1 style="text-align: center">{{ site.title }}</h1>
+            <h1 class="w3-center">{{ site.title }}</h1>
           </header>
         </div>
 
@@ -130,7 +129,7 @@ page.sidebarWidth: "10%"
         <!-- Footer -->
         <div class="w3-container" id="footerId">
           <footer class="w3-light-grey">
-            <h3>FOOTER</h3>
+            <h5>Footer</h5>
             <p>
               Praesent tincidunt sed tellus ut rutrum. Sed vitae justo
               condimentum, porta lectus vitae, ultricies congue gravida diam non
@@ -146,22 +145,8 @@ page.sidebarWidth: "10%"
     <!-- End Page Container -->
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
-
-    <script>
-      function w3_open() {
-        const sideBarWidth = "20%";
-        document.getElementById("MainContentId").style.marginLeft = sideBarWidth;
-        document.getElementById("menuSideBarId").style.width = sideBarWidth;
-        document.getElementById("menuSideBarId").style.display = "block";
-        document.getElementById("openNavId").style.display = "none";
-      }
-      function w3_close() {
-        document.getElementById("MainContentId").style.marginLeft = "0%";
-        document.getElementById("menuSideBarId").style.display = "none";
-        document.getElementById("openNavId").style.display = "inline-block";
-      }
-    </script>
   </body>
 </html>
